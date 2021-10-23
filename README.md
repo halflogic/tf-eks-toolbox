@@ -1,12 +1,12 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/halflogic/tf-eks-toolbox/Build%20Push%20Docker%20Image%20CI) 
-![GitHub](https://img.shields.io/github/license/halflogic/tf-eks-toolbox)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/halflogic/tf-eks-toolbox/Build%20Push%20Docker%20Image%20CI)](https://github.com/halflogic/tf-eks-toolbox/actions/workflows/docker-build.yml) 
+[![GitHub](https://img.shields.io/github/license/halflogic/tf-eks-toolbox)](https://github.com/halflogic/tf-eks-toolbox/blob/master/LICENSE)
 
 
 # Terraform EKS Toolbox 
 
 Github: https://github.com/halflogic/tf-eks-toolbox
 
-Ubuntu based container image you can use to manage your AWS EKS cluster.
+Ubuntu based container image you can use to manage your AWS EKS cluster.\
 Incudes primary tools like **aws-cli2, kubectl, eksctl, terraform, helm.**
 
 Public images from Docker Hub are available.
@@ -19,7 +19,8 @@ Specifiy the image tag since there is no "latest" tag.
 
 Example: ` halflogic/tf-eks-toolbox:1.21.r1 `
 
-Means **kubectl 1.21** is installed, **r1** is the toolbox release version which may contain updates to the rest of the toolset. Refer to the Dockerfile to see specific versions included in the release.
+Means **kubectl 1.21** is installed, **r1** is the toolbox release version which may contain updates to the rest of the toolset.\
+Refer to the [Dockerfile](https://github.com/halflogic/tf-eks-toolbox/blob/master/Dockerfile) to see specific versions included in the release.
 
 ### Usage:
 ```
