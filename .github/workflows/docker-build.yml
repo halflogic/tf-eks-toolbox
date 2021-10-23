@@ -1,10 +1,9 @@
 name: Build Push Docker Image CI
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  release:
+    # Only use the types keyword to narrow down the activity types that will trigger your workflow.
+    types: [published]
 
 jobs:
   docker:
@@ -24,5 +23,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: halflogic/tf-eks-toolbox:latest,halflogic/tf-eks-toolbox:1.0.0
+          tags: halflogic/tf-eks-toolbox:1.21.r1
           
