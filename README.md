@@ -31,7 +31,7 @@ docker run -it --rm halflogic/tf-eks-toolbox:<tag>
 
 # or keep running in detached mode
 docker run --name tf-eks-toolbox -dt halflogic/tf-eks-toolbox:<tag>
-docker exec -it tfeks-toolbox /bin/bash
+docker exec -it tf-eks-toolbox /bin/bash
 ```
 
 
