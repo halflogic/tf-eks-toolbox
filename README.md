@@ -37,17 +37,17 @@ docker exec -it tf-eks-toolbox /bin/bash
 
 ### Tools installed:
 
-- aws-cli2
+- aws-cli2\
   https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-- eksctl 
+- eksctl\
   https://github.com/weaveworks/eksctl/releases
-- helm v3
+- helm v3\
   https://github.com/helm/helm/releases
-- kubectl
+- kubectl\
   https://www.downloadkubernetes.com/
-- kubent
+- kubent\
   https://github.com/doitintl/kube-no-trouble/releases
-- terraform
+- terraform\
   https://github.com/hashicorp/terraform/releases
 
 Also includes common tools and dependencies:
