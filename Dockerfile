@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
-ARG EKSCTL_VER=v0.70.0
+ARG EKSCTL_VER=v0.72.0
 ARG HELM_VER=v3.7.1
-ARG KUBECTL_VER=v1.20.11
+ARG KUBECTL_VER=v1.19.16
 ARG KUBENT_VER=0.5.0
-ARG TERRAFORM_VER=1.0.9
+ARG TERRAFORM_VER=1.0.10
 
 ENV DEBIAN_FRONTEND=noninteractive
 # ENV TZ=America/New_York
@@ -21,6 +21,7 @@ RUN apt update && apt install -y \
   jq \
   less \
   unzip \
+  vim \
   && rm -rf /var/lib/apt/lists/*
 
 # aws-cli2
@@ -42,7 +43,6 @@ RUN curl -sL "https://get.helm.sh/helm-${HELM_VER}-linux-amd64.tar.gz" | tar xz 
 RUN curl -sLO "https://dl.k8s.io/release/${KUBECTL_VER}/bin/linux/amd64/kubectl" \
   && chmod +x kubectl \
   && mv kubectl /usr/local/bin
-
 
 # kubent
 RUN curl -sL "https://github.com/doitintl/kube-no-trouble/releases/download/${KUBENT_VER}/kubent-${KUBENT_VER}-linux-amd64.tar.gz" | tar xz \
