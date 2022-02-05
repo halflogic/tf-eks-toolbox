@@ -1,5 +1,5 @@
 [![Docker Build](https://github.com/halflogic/tf-eks-toolbox/actions/workflows/docker-build-release.yml/badge.svg)](https://github.com/halflogic/tf-eks-toolbox/actions/workflows/docker-build-release.yml)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/halflogic/tf-eks-toolbox/Build%20Push%20Docker%20Image%20CI)](https://github.com/halflogic/tf-eks-toolbox/actions/workflows/docker-build.yml) 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/halflogic/tf-eks-toolbox/Docker%20Build%20Push%20Release)](https://github.com/halflogic/tf-eks-toolbox/actions/workflows/docker-build-release.yml) 
 [![GitHub](https://img.shields.io/github/license/halflogic/tf-eks-toolbox)](https://github.com/halflogic/tf-eks-toolbox/blob/master/LICENSE)
 
 
