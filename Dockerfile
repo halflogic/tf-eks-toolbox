@@ -33,7 +33,7 @@ RUN curl -sL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o awscl
 
 # eksctl
 # https://github.com/eksctl-io/eksctl/releases
-RUN curl -sL "https://github.com/eksctl-io/eksctl/releases/download/${EKSCTL_VER}/eksctl_Linux_amd64_amd64.tar.gz" | tar xz \
+RUN curl -sL "https://github.com/eksctl-io/eksctl/releases/download/${EKSCTL_VER}/eksctl_Linux_amd64.tar.gz" | tar xz \
   && mv eksctl /usr/local/bin
 
 # helm3
