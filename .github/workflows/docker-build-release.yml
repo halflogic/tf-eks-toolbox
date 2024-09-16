@@ -5,7 +5,7 @@ name: Docker Build Push Release
 on:
   release:
     # Only use the types keyword to narrow down the activity types that will trigger your workflow.
-    types: [published, edited]
+    types: [published]
 
 jobs:
   docker-build:
